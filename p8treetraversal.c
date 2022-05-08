@@ -1,21 +1,21 @@
-//p8  Tree traversals
+// p8  Tree traversals
 #include <stdio.h>
 #include <stdlib.h>
 
 /* A binary tree node has data, pointer to left child
 and a pointer to right child */
-struct node {
+struct node
+{
 	int data;
-	struct node* left;
-	struct node* right;
+	struct node *left;
+	struct node *right;
 };
 
 /* Helper function that allocates a new node with the
 given data and NULL left and right pointers. */
-struct node* newNode(int data)
+struct node *newNode(int data)
 {
-	struct node* node
-		= (struct node*)malloc(sizeof(struct node));
+	struct node *node = (struct node *)malloc(sizeof(struct node));
 	node->data = data;
 	node->left = NULL;
 	node->right = NULL;
@@ -25,7 +25,7 @@ struct node* newNode(int data)
 
 /* Given a binary tree, print its nodes according to the
 "bottom-up" postorder traversal. */
-void printPostorder(struct node* node)
+void printPostorder(struct node *node)
 {
 	if (node == NULL)
 		return;
@@ -41,7 +41,7 @@ void printPostorder(struct node* node)
 }
 
 /* Given a binary tree, print its nodes in inorder*/
-void printInorder(struct node* node)
+void printInorder(struct node *node)
 {
 	if (node == NULL)
 		return;
@@ -57,7 +57,7 @@ void printInorder(struct node* node)
 }
 
 /* Given a binary tree, print its nodes in preorder*/
-void printPreorder(struct node* node)
+void printPreorder(struct node *node)
 {
 	if (node == NULL)
 		return;
@@ -75,7 +75,7 @@ void printPreorder(struct node* node)
 /* Driver program to test above functions*/
 int main()
 {
-	struct node* root = newNode(1);
+	struct node *root = newNode(1);
 	root->left = newNode(2);
 	root->right = newNode(3);
 	root->left->left = newNode(4);

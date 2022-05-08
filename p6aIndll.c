@@ -1,4 +1,4 @@
-// INSERTION IN DOUBLE LINKED LIST
+// P6A.INSERTION IN DOUBLE LINKED LIST
 #include <stdio.h> 
 #include <stdlib.h>
 

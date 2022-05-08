@@ -1,4 +1,4 @@
-// STACK USING LINKED LIST
+//2B STACK USING LINKED LIST
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

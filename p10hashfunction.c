@@ -1,4 +1,4 @@
-// HASH FUNCTION
+// P10.HASH FUNCTION
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
